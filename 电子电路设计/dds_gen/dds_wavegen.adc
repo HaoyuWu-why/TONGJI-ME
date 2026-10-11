@@ -1,0 +1,46 @@
+set_pin_assignment { CLK } { LOCATION = R7; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; }
+
+# F12 is the on-board UART2USB bridge TXD-to-FPGA signal on DMZ-EG4S20.
+# PWM_Out remains on J13/P4-24 for optional diagnostics only. Normal amplitude
+# operation uses KEY4/KEY5 and is observed at the on-board DAC with CH1, so no
+# CH2/PWM probe connection is required.
+set_pin_assignment { UART_RX } { LOCATION = F12; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { PWM_Out } { LOCATION = J13; IOSTANDARD = LVCMOS33; }
+
+# Board-local song controls: SW0 (A9) drives the passive buzzer (H11).
+# SW0 UP = 1/play, SW0 DOWN = 0/stop and restore DDS settings.
+set_pin_assignment { Song_Enable } { LOCATION = A9; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN; }
+set_pin_assignment { Buzzer } { LOCATION = H11; IOSTANDARD = LVCMOS33; }
+
+set_pin_assignment { Key_Col[0] } { LOCATION = E11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Key_Col[1] } { LOCATION = D11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Key_Col[2] } { LOCATION = C11; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Key_Col[3] } { LOCATION = F10; IOSTANDARD = LVCMOS33; }
+
+set_pin_assignment { Key_Row[0] } { LOCATION = E10; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { Key_Row[1] } { LOCATION = C10; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { Key_Row[2] } { LOCATION = F9;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { Key_Row[3] } { LOCATION = D9;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+set_pin_assignment { DA_Data[0] } { LOCATION = B14; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[1] } { LOCATION = B15; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[2] } { LOCATION = B16; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[3] } { LOCATION = C15; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[4] } { LOCATION = C16; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[5] } { LOCATION = E13; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[6] } { LOCATION = E16; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DA_Data[7] } { LOCATION = F16; IOSTANDARD = LVCMOS33; }
+
+set_pin_assignment { Digitron_Out[0] } { LOCATION = A4; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[1] } { LOCATION = A6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[2] } { LOCATION = B8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[3] } { LOCATION = E8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[4] } { LOCATION = A7; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[5] } { LOCATION = B5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[6] } { LOCATION = A8; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { Digitron_Out[7] } { LOCATION = C8; IOSTANDARD = LVCMOS33; }
+
+set_pin_assignment { DigitronCS_Out[0] } { LOCATION = C9; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DigitronCS_Out[1] } { LOCATION = B6; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DigitronCS_Out[2] } { LOCATION = A5; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { DigitronCS_Out[3] } { LOCATION = A3; IOSTANDARD = LVCMOS33; }

@@ -1,0 +1,25 @@
+# FPGA tool build artefacts
+**/build_td_fix/
+**/*.bit
+**/*.bin
+**/*.rbf
+**/*.db
+**/*.qor
+**/*.area
+**/*.rpt
+
+# Simulation work products
+**/work/
+**/transcript
+**/vsim.wlf
+**/modelsim.ini
+
+# Bundled serial-terminal application and local logs
+**/LLCom/
+**/logs/
+
+# Python cache and editor state
+**/__pycache__/
+**/*.py[cod]
+.vscode/
+.idea/
