@@ -1,0 +1,7 @@
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.log
+*_rtw/
+~$*.docx
