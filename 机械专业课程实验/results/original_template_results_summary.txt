@@ -1,0 +1,18 @@
+MATLAB: 9.14.0.2206163 (R2023a)
+Solver: ode4 fixed-step
+Proportional final values: 5.000000000 10.000000000 20.000000000
+Integral slopes: 1.000000000 0.200000000 0.020000000
+First-order T63.2 values: 0.010000 0.100000 0.499900 0.999700 4.998400
+PI peak/final: 2.500008 2.500008
+PD peak/final: 3.000000 1.000000
+PID peak/final: 3.000008 2.500008
+Frequency measured wr/wb: 0.707000 1.272000 rad/s
+Frequency theory wr/wb: 0.707107 1.272020 rad/s
+Frequency errors: 0.015101% 0.001545%
+Series PM: 17.964242 -> 57.879522 deg
+Series crossover: 3.084232 -> 4.921339 rad/s
+Series ramp ess: 0.100000000
+Series OS/Ts: 60.467903 7.317091 -> 14.652839 1.313585
+Feedback OS/Ts/Tr: 4.321392 8.432368 3.037785 -> 0.263682 6.403518 3.975868
+Compound OS/Ts/Tr: 60.467903 7.317091 0.366778 -> 9.103070 2.278716 0.685220
+Compound corrected final error: 0.000003084

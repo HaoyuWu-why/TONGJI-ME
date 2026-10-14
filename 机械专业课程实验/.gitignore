@@ -1,0 +1,7 @@
+slprj/
+*.slxc
+*.autosave
+*.asv
+*.m~
+*.log
+results/data_*.csv
